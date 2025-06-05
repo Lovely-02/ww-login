@@ -16,11 +16,13 @@
 ### 使用 uv (推荐)
 
 1. 安装依赖：
+
 ```bash
 uv sync
 ```
 
 2. 启动服务：
+
 ```bash
 uv run start
 ```
@@ -28,11 +30,13 @@ uv run start
 ### 使用 pip
 
 1. 安装依赖：
+
 ```bash
 pip install -r requirements.txt
 ```
 
 2. 启动服务：
+
 ```bash
 python start.py
 ```
@@ -40,11 +44,13 @@ python start.py
 ## Docker 部署
 
 1. 构建镜像：
+
 ```bash
 docker build -t ww-login .
 ```
 
 2. 运行容器：
+
 ```bash
 docker run -d -p 7860:7860 ww-login
 ```
