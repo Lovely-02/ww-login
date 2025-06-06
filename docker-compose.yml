@@ -1,0 +1,10 @@
+services:
+  ww-login:
+    image: ghcr.io/lovely-02/ww-login:master
+    container_name: ww-login
+    privileged: true
+    restart: always
+    ports:
+      - '7866:7860'
+    environment:
+      - TZ=Asia/Shanghai

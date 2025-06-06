@@ -55,6 +55,20 @@ docker build -t ww-login .
 docker run -d -p 7860:7860 ww-login
 ```
 
+## Docker Compose 部署
+
+1. 克隆仓库
+
+```bash
+git clone https://github.com/Lovely-02/ww-login
+```
+
+2. 运行 docker compose
+
+```bash
+docker compose up --pull always -d
+```
+
 ## 配置说明
 
 服务配置可以通过环境变量或 `.env` 文件设置：
