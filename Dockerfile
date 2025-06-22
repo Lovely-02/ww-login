@@ -26,13 +26,13 @@ RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
 # Expose port
-EXPOSE 7860
+EXPOSE 7866
 
 # Set environment variables
 ENV HOST=0.0.0.0
-ENV PORT=7860
+ENV PORT=7866
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
 # Run the application
-CMD ["uvicorn", "ww_login.main:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "ww_login.main:app", "--host", "0.0.0.0", "--port", "7866"]
